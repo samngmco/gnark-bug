@@ -1,0 +1,19 @@
+{
+  "name": "gnark-bug",
+  "version": "1.0.0",
+  "description": "A bug in gnark ecdsa signature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:samngmco/gnark-bug.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "elliptic": "^6.5.4"
+  }
+}
