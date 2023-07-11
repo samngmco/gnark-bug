@@ -13,5 +13,14 @@ Pub.X: 3bd2defa93e3a69cefa9765496ac537cc1280990df61e6bf18166863a09e8f39
 Pub.Y: 571bff72b6dc52bd7f7bb4dd390feba74460b3ca12eeda2a19d9d185740853d1
 ```
 
-Port the input to `index.js` verification failed
+Port the input to `index.js` 
+
+```
+// this is sha256 of "testing ECDSA (sha256)"
+msgHash = "918e47e7d1b7b4892fd746e691f8f44f3c9a3cc9a129de06301701895ea9676d"
+console.log(key.verify(msgHash, signature)) // <-- this is false
+
+msgHash = "918e47e7" // <-- the first 32-bit of the above
+console.log(key.verify(msgHash, signature)) // <-- this is true!!!!
+```
 
